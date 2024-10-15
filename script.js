@@ -35,20 +35,20 @@ init();
 
 var crsr = document.querySelector(".cursor");
 var blurs = document.querySelector("#cursor-blur");
-document.addEventListener("mousemove", function (dets) {
-  (crsr.style.left = dets.x + 30 + "px"), (crsr.style.top = dets.y + "px");
-  // blur.style.left = dets.x - 175 + "px",
-  // blur.style.top = dets.y - 175 + "px"
-});
+// document.addEventListener("mousemove", function (dets) {
+//   (crsr.style.left = dets.x + 30 + "px"), (crsr.style.top = dets.y + "px");
+//   // blur.style.left = dets.x - 175 + "px",
+//   // blur.style.top = dets.y - 175 + "px"
+// });
 var main = document.querySelector(".main");
-document.addEventListener("mousemove", function (dets) {
-  gsap.to(crsr, {
-    left: dets.x + 30 + "px",
-    top: dets.y + "px",
-    duration: 1.2, // Adjust duration for delay effect
-    ease: "power2.out", // Smoother easing
-  });
-});
+// document.addEventListener("mousemove", function (dets) {
+//   gsap.to(crsr, {
+//     left: dets.x + 30 + "px",
+//     top: dets.y + "px",
+//     duration: 1.2, // Adjust duration for delay effect
+//     ease: "power2.out", // Smoother easing
+//   });
+// });
 
 gsap.from(".page1 h1,.page1 h2", {
   y: 10,
@@ -260,14 +260,14 @@ h4Elements.forEach((elem) => {
 });
 
 // Make the circle follow the mouse cursor
-document.addEventListener("mousemove", function (e) {
-  gsap.to("#circle", {
-    left: e.clientX - 15 + "px",
-    top: e.clientY - 15 + "px",
-    duration: 0.2,
-    ease: "power2.out",
-  });
-});
+// document.addEventListener("mousemove", function (e) {
+//   gsap.to("#circle", {
+//     left: e.clientX - 15 + "px",
+//     top: e.clientY - 15 + "px",
+//     duration: 0.2,
+//     ease: "power2.out",
+//   });
+// });
 
 // Animate the nav bar entrance
 gsap.from("#nav .nav-text", {
